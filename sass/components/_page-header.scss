@@ -1,8 +1,10 @@
 .page-header {
-    border-bottom: 1px solid var(--header-border-color);
+  border-bottom: 1px solid var(--header-border-color);
+  overflow: hidden;
+  position: relative;
 }
 
 .page-header__container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }

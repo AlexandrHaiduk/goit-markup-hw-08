@@ -1,13 +1,19 @@
 .thumb-social {
-    margin-left: 95px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    & {
+      margin-left: 95px;
+    }
+  }
 }
 
 .thumb-social__title {
-    margin-bottom: 20px;
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }

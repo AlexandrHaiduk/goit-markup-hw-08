@@ -1,0 +1,26 @@
+.menu-container {
+  // display: none;
+  transform: translateX(100%);
+  position: absolute;
+}
+
+.menu-container.is-open + .icon-burger {
+  display: none;
+}
+
+@media screen and (min-width: $tablet) {
+  .mobile-menu-button {
+    display: none;
+  }
+
+  .menu-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: $tablet - 1px) {
+  .mobile-menu-button {
+    display: block;
+    margin-left: auto;
+  }
+}
