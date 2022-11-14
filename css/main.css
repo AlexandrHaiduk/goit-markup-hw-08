@@ -257,8 +257,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
   padding: 40px;
   background-color: var(--white-color);
   -webkit-transform: translate(-50%, -50%);
@@ -271,6 +269,12 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__title {
@@ -351,7 +355,6 @@ img {
 }
 
 .main-button__modal-send-button {
-  width: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -392,6 +395,10 @@ img {
   background-origin: border-box;
   background-size: cover;
   border: none;
+}
+
+.checkbox__input:focus + .checkbox__icon {
+  border: 1px solid var(--accent-color);
 }
 
 .checkbox__conditions {
