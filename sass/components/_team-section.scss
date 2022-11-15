@@ -1,6 +1,9 @@
 .team {
   background-color: var(--secondary-background-color);
   text-align: center;
+  padding: 60px 0;
+  @media screen and (min-width: $desktop) {
+  }
   padding: 94px 0;
 }
 
@@ -15,18 +18,19 @@
   @media screen and(min-width:$desktop) {
     & {
       font-size: 36px;
-
       margin-bottom: 50px;
     }
   }
 }
 
 .team__list {
-  @media screen and(min-width:$desktop) {
-    & {
-      display: flex;
-      gap: 30px;
-    }
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+
+  @media screen and(min-width:$tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -37,8 +41,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   list-style: none;
-  &:not(:last-child) {
-    margin-bottom: 30px;
+
+  @media screen and(min-width:$tablet) {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
