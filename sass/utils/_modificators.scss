@@ -4,7 +4,7 @@
 
 .nav-main__link--current {
   color: var(--accent-color);
-  z-index: 999;
+  // z-index: 999;
 
   &::after {
     opacity: 1;

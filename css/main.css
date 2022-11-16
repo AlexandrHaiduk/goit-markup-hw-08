@@ -10,7 +10,7 @@
   --secondary-background-color: #f5f4fa;
   --header-border-color: #ececec;
   --project-item-border: #eeeeee;
-  --hero-background-color: rgba(47, 48, 58, 0.4);
+  --hero-background-color: rgba(47, 48, 58, 1);
   --social-links-main-color: #afb1b8;
   --social-links-footer-background-color: rgba(255, 255, 255, 0.1);
   --modal-overlay-color: rgba(0, 0, 0, 0.2);
@@ -83,6 +83,7 @@ img {
 }
 
 .logo {
+  padding: 14px;
   font-family: var(--logo-font), sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -249,8 +250,8 @@ img {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 45px;
+  padding-right: 45px;
   background-color: var(--hero-background-color);
   background-position: center;
   background-size: cover;
@@ -318,6 +319,7 @@ img {
   position: fixed;
   left: 0;
   top: 0;
+  padding: 93px 15px;
   width: 100%;
   height: 100%;
   background-color: var(--modal-overlay-color);
@@ -327,16 +329,17 @@ img {
           transition-duration: var(--main-transition-duration);
   -webkit-transition-timing-function: var(--main-transtition-timing-function);
           transition-timing-function: var(--main-transtition-timing-function);
+  overflow-y: scroll;
+}
+@media screen and (min-width: 768px) {
+  .modal-overlay {
+    padding: 0;
+  }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   padding: 40px;
   background-color: var(--white-color);
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,6 +348,15 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1012,7 +1024,6 @@ img {
 
 .nav-main__link--current {
   color: var(--accent-color);
-  z-index: 999;
 }
 .nav-main__link--current::after {
   opacity: 1;
