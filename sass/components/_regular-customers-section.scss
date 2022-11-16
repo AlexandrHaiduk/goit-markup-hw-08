@@ -43,20 +43,30 @@
   display: flex;
   // align-items: center;
   // justify-content: center;
-  flex-basis: calc((100% - 30px) / 2);
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .regular-customers__link {
+  width: 100%;
   color: var(--social-links-main-color);
-  padding: 16px 32px;
+  padding: 16px 0;
   border: 1px solid var(--social-links-main-color);
   border-radius: 4px;
-  max-width: 170px;
-  max-height: 92px;
   transition-property: color, border-color;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transtition-timing-function);
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover,
   &:focus {

@@ -23,6 +23,10 @@
   transition-timing-function: var(--main-transtition-timing-function);
   text-decoration: none;
 
+  @media screen and (min-width: $tablet) {
+    padding: 32px 0;
+  }
+
   &::after {
     content: "";
     position: absolute;

@@ -3,8 +3,8 @@
   text-align: center;
   padding: 60px 0;
   @media screen and (min-width: $desktop) {
+    padding: 94px 0;
   }
-  padding: 94px 0;
 }
 
 .team__title {
@@ -32,6 +32,11 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media screen and (min-width: $desktop) {
+    // flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .team__item {
@@ -43,7 +48,7 @@
   list-style: none;
 
   @media screen and(min-width:$tablet) {
-    flex-basis: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 

@@ -2,26 +2,25 @@
   margin-left: auto;
   display: flex;
   list-style: none;
+  gap: 10px;
 
-  &__item:not(:first-child) {
-    margin-left: 50px;
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    justify-content: center;
+  }
 
-    @media screen and (min-width: $tablet) {
-      margin-left: 0;
-      margin-top: 10px;
-    }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    gap: 30px;
   }
 
   &__icon {
     margin-right: 10px;
     fill: currentColor;
-  }
-
-  @media screen and(min-width:$tablet) {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    justify-content: center;
   }
 }
 
