@@ -1,17 +1,18 @@
 .menu-container {
   // transform: translateX(100%);
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 0;
   bottom: 0;
   right: 0;
+  padding: 40px;
   width: 100vw;
   height: 100vh;
+  gap: 35px;
   display: flex;
   flex-direction: column;
   z-index: 9999;
   background-color: #fff;
-
 
   @media screen and(min-width:$tablet) {
     display: flex;
@@ -21,6 +22,7 @@
     height: 100%;
     position: static;
     flex-direction: row;
+    padding: 0;
   }
 
   @media screen and(min-width:$desktop) {
@@ -29,7 +31,7 @@
   }
 }
 
-.menu-container__open-button, 
+.menu-container__open-button,
 .menu-container__close-button {
   border: 0;
   background-color: transparent;
