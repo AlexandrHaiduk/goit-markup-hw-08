@@ -1,13 +1,26 @@
 .menu-container {
-  display: none;
   // transform: translateX(100%);
-  // position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+  background-color: #fff;
+
 
   @media screen and(min-width:$tablet) {
     display: flex;
     margin-left: 87px;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
+    position: static;
+    flex-direction: row;
   }
 
   @media screen and(min-width:$desktop) {
@@ -16,7 +29,8 @@
   }
 }
 
-.mobile-menu-button {
+.menu-container__open-button, 
+.menu-container__close-button {
   border: 0;
   background-color: transparent;
   display: flex;
