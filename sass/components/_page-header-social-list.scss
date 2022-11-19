@@ -3,6 +3,7 @@
   justify-content: start;
   list-style: none;
   gap: 0;
+  margin-top: 64px;
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -24,10 +25,23 @@
 
   font-family: var(--main-text-font);
   font-weight: 500;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.22;
 
   letter-spacing: 0.02em;
+  text-align: left;
+
+  @media screen and(min-width:$phone) {
+    font-size: 18px;
+  }
+}
+
+.menu-container__item:first-child .menu-container__link {
+  padding-left: 0;
+}
+
+.menu-container__item:last-child .menu-container__link {
+  padding-right: 0;
 }
 
 .menu-container__item:not(:last-child) {

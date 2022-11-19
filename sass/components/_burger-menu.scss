@@ -1,18 +1,24 @@
 .menu-container {
-  // transform: translateX(100%);
-  position: absolute;
-  top: 60px;
+  transform: translateX(100%);
+  position: fixed;
+  top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
+
   padding: 40px;
   width: 100vw;
   height: 100vh;
-  gap: 35px;
   display: flex;
   flex-direction: column;
   z-index: 9999;
   background-color: #fff;
+
+  transition-property: transform;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transtition-timing-function);
+
+  &.is-open {
+    transform: translateX(0);
+  }
 
   @media screen and(min-width:$tablet) {
     display: flex;
@@ -23,6 +29,7 @@
     position: static;
     flex-direction: row;
     padding: 0;
+    transform: translateX(0);
   }
 
   @media screen and(min-width:$desktop) {
@@ -37,33 +44,33 @@
   background-color: transparent;
   display: flex;
   margin-left: auto;
-  .icon-cross {
-    display: none;
-    fill: currentColor;
-  }
+
+  .icon-cross,
   .icon-burger {
     fill: currentColor;
-  }
-
-  // &.is-open .icon-burger {
-  //   display: none;
-  // }
-
-  &.is-open {
-    .icon-cross {
-      display: block;
-    }
-    .icon-burger {
-      display: none;
-    }
 
     &:hover,
     &:focus {
       fill: var(--accent-color);
     }
+
+    // &.is-open {
+    //   .icon-cross {
+    //     display: block;
+    //   }
+    //   .icon-burger {
+    //     display: none;
+    //   }
   }
 
   @media screen and(min-width:$tablet) {
     display: none;
   }
+}
+
+.menu-container__close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin-left: 0;
 }
