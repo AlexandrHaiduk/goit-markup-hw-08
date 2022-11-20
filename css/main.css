@@ -1466,14 +1466,10 @@ img {
 .menu-container__close-button .icon-burger {
   fill: currentColor;
 }
-.menu-container__open-button .icon-cross:hover, .menu-container__open-button .icon-cross:focus,
-.menu-container__open-button .icon-burger:hover,
-.menu-container__open-button .icon-burger:focus,
-.menu-container__close-button .icon-cross:hover,
-.menu-container__close-button .icon-cross:focus,
-.menu-container__close-button .icon-burger:hover,
-.menu-container__close-button .icon-burger:focus {
-  fill: var(--accent-color);
+.menu-container__open-button:hover, .menu-container__open-button:focus,
+.menu-container__close-button:hover,
+.menu-container__close-button:focus {
+  color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu-container__open-button,

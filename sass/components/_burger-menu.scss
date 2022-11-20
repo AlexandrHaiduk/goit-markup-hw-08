@@ -49,11 +49,11 @@
   .icon-cross,
   .icon-burger {
     fill: currentColor;
+  }
 
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 
   @media screen and(min-width:$tablet) {
