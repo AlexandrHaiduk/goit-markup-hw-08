@@ -1417,6 +1417,7 @@ img {
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -1437,6 +1438,8 @@ img {
     padding: 0;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    -webkit-transition-property: none;
+    transition-property: none;
   }
 }
 @media screen and (min-width: 1200px) {

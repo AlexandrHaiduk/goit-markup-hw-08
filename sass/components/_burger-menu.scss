@@ -17,6 +17,7 @@
 
   &.is-open {
     transform: translateX(0);
+    z-index: 1;
   }
 
   @media screen and(min-width:$tablet) {
@@ -29,6 +30,7 @@
     flex-direction: row;
     padding: 0;
     transform: translateX(0);
+    transition-property: none;
   }
 
   @media screen and(min-width:$desktop) {
@@ -52,14 +54,6 @@
     &:focus {
       fill: var(--accent-color);
     }
-
-    // &.is-open {
-    //   .icon-cross {
-    //     display: block;
-    //   }
-    //   .icon-burger {
-    //     display: none;
-    //   }
   }
 
   @media screen and(min-width:$tablet) {
