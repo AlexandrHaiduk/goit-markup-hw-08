@@ -10,30 +10,27 @@
   background-size: cover;
   margin: 0 auto;
 
-  @media screen and (min-width: $phone) {
-    & {
-      max-width: 480px;
-    }
-  }
-
-  @media screen and (min-width: $tablet) {
-    & {
-      max-width: 768px;
-    }
-  }
-
   @media screen and (min-width: $desktop) {
-    & {
-      max-width: 1600px;
-      padding-top: 200px;
-      padding-bottom: 200px;
-      background-image: linear-gradient(
-          var(--hero-background-color),
-          var(--hero-background-color)
-        )
-        url(../images/hero-background-image.jpg);
-    }
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        var(--hero-overlay-color),
+        var(--hero-overlay-color)
+      ),
+      url(../images/desktop/hero-background-image-desktop.jpg);
   }
+
+  // @media screen and (min-width: $desktop) {
+  //   max-width: 1600px;
+  //   padding-top: 200px;
+  //   padding-bottom: 200px;
+  //   background-image: linear-gradient(
+  //       var(--hero-background-color),
+  //       var(--hero-background-color)
+  //     )
+  //     url(../images/desktop/hero-background-image-desktop.jpg);
+  // }
 }
 
 .hero__title {

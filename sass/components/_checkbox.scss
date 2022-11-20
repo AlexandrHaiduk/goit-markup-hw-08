@@ -1,12 +1,23 @@
 .checkbox {
   margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 2.5vw;
+
+  line-height: 1.16;
+
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  @media screen and (min-width: $phone) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+    justify-content: center;
+  }
 }
 
 .checkbox__icon {

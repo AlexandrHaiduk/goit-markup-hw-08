@@ -41,11 +41,17 @@
 
 .advantage__name {
   margin-bottom: 10px;
+  text-align: center;
+
   font-size: 14px;
   line-height: 1.17;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    text-align-last: left;
+  }
 }
 
 .advantage__description {
