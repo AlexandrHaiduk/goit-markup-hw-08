@@ -9,7 +9,7 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  max-width: 480px;
+  // max-width: 480px;
   background-image: linear-gradient(
       var(--hero-overlay-color),
       var(--hero-overlay-color)
@@ -26,8 +26,8 @@
       url(../images/phone/hero-background-image-480@2.jpeg);
   }
 
-  @media screen and (min-width: $tablet) {
-    max-width: 768px;
+  @media screen and (min-width: $phone + 1px) {
+    // max-width: 768px;
     background-image: linear-gradient(
         var(--hero-overlay-color),
         var(--hero-overlay-color)
@@ -45,10 +45,9 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet + 1px) {
     max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+
     background-image: linear-gradient(
         var(--hero-overlay-color),
         var(--hero-overlay-color)
@@ -64,6 +63,11 @@
         ),
         url(../images/desktop/hero-background-image-1600@2.jpeg);
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 200px;
+    padding-top: 200px;
   }
 }
 
