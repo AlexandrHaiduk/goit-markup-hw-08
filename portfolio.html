@@ -102,7 +102,10 @@
             </li>
           </ul>
 
-          <button class="menu-container__close-button js-close-menu">
+          <button
+            type="button"
+            class="menu-container__close-button js-close-menu"
+          >
             <svg width="40" height="40">
               <use
                 class="icon-cross"
@@ -111,7 +114,7 @@
             </svg>
           </button>
         </div>
-        <button class="menu-container__open-button js-open-menu">
+        <button type="button" class="menu-container__open-button js-open-menu">
           <svg width="40" height="40">
             <use
               class="icon-burger"
@@ -121,36 +124,50 @@
         </button>
       </div>
     </header>
-    <!-- <main>
+    <main>
       <section class="project">
-        <h1 class="visually-hidden">Наші проекти</h1>
-        <ul class="filter-list">
-          <li class="filter-list__item">
-            <button type="button" class="filter-list__button">Усі</button>
-          </li>
-          <li class="filter-list__item">
-            <button type="button" class="filter-list__button">Веб-сайти</button>
-          </li>
-          <li class="filter-list__item">
-            <button type="button" class="filter-list__button">Додатки</button>
-          </li>
-          <li class="filter-list__item">
-            <button type="button" class="filter-list__button">Дизайн</button>
-          </li>
-          <li class="filter-list__item">
-            <button type="button" class="filter-list__button">Маркетинг</button>
-          </li>
-        </ul>
         <div class="container">
+          <h1 class="visually-hidden">Наші проекти</h1>
+          <ul class="filter-list">
+            <li class="filter-list__item">
+              <button type="button" class="filter-list__button">Усі</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-list__button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-list__button">Додатки</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-list__button">Дизайн</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-list__button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
           <ul class="card-set">
             <li class="card-set__item">
               <a href="#" class="card-set__link">
                 <div class="card-set__thumb">
                   <img
                     class="card-set__image"
-                    src="images/tech-store.jpg"
+                    srcset="
+                      ./images/desktop/tech-store-370.jpg   370w,
+                      ./images/desktop/tech-store-370@2.jpg 740w,
+                      ./images/tablet/tech-store-354.jpg    354w,
+                      ./images/tablet/tech-store-354@2.jpg  708w,
+                      ./images/phone/tech-store-450.jpg     450w,
+                      ./images/phone/tech-store-450@2.jpg   900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px,
+                  100vw"
+                    src="./images/desktop/tech-store-370.jpg"
                     alt="laptop"
-                    width="370"
                   />
                   <p class="card-set__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -170,9 +187,18 @@
                 <div class="card-set__thumb">
                   <img
                     class="card-set__image"
-                    src="images/new-orlean-vs-gold-star.jpg"
+                    srcset="
+                      ./images/desktop/new-orlean-vs-gold-star-370.jpg   370w,
+                      ./images/desktop/new-orlean-vs-gold-star-370@2.jpg 740w,
+                      ./images/tablet/new-orlean-vs-gold-star-354.jpg    354w,
+                      ./images/tablet/new-orlean-vs-gold-star-354@2.jpg  708w,
+                      ./images/phone/new-orlean-vs-gold-star-450.jpg     450w,
+                      ./images/phone/new-orlean-vs-gold-star-450@2.jpg   900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px,
+                  100vw"
+                    src="./images/desktop/new-orlean-vs-gold-star-370.jpg"
                     alt="poster-new-orlean-vs-gold-star"
-                    width="370"
                   />
                   <p class="card-set__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -194,9 +220,18 @@
                 <div class="card-set__thumb">
                   <img
                     class="card-set__image"
-                    src="images/imgseafood-restaraunt.jpg"
+                    srcset="
+                      ./images/desktop/imgseafood-restaraunt-370.jpg   370w,
+                      ./images/desktop/imgseafood-restaraunt-370@2.jpg 740w,
+                      ./images/tablet/imgseafood-restaraunt-354.jpg    354w,
+                      ./images/tablet/imgseafood-restaraunt-354@2.jpg  708w,
+                      ./images/phone/imgseafood-restaraunt-450.jpg     450w,
+                      ./images/phone/imgseafood-restaraunt-450@2.jpg   900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px,
+                  100vw"
+                    src="./images/desktop/imgseafood-restaraunt-370.jpg"
                     alt="restaraunt-logo"
-                    width="370"
                   />
                   <p class="card-set__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -216,9 +251,18 @@
                 <div class="card-set__thumb">
                   <img
                     class="card-set__image"
-                    src="images/prime-project.jpg"
+                    srcset="
+                      ./images/desktop/prime-project-370.jpg   370w,
+                      ./images/desktop/prime-project-370@2.jpg 740w,
+                      ./images/tablet/prime-project-354.jpg    354w,
+                      ./images/tablet/prime-project-354@2.jpg  708w,
+                      ./images/phone/prime-project-450.jpg     450w,
+                      ./images/phone/prime-project-450@2.jpg   900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px,
+                  100vw"
+                    src="./images/desktop/prime-project-370.jpg"
                     alt="Headphones"
-                    width="370"
                   />
                   <p class="card-set__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -238,9 +282,18 @@
                 <div class="card-set__thumb">
                   <img
                     class="card-set__image"
-                    src="images/boxes.jpg"
+                    srcset="
+                      ./images/desktop/boxes-370.jpg   370w,
+                      ./images/desktop/boxes-370@2.jpg 740w,
+                      ./images/tablet/boxes-354.jpg    354w,
+                      ./images/tablet/boxes-354@2.jpg  708w,
+                      ./images/phone/boxes-450.jpg     450w,
+                      ./images/phone/boxes-450@2.jpg   900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px,
+                  100vw"
+                    src="./images/desktop/boxes-370.jpg"
                     alt="two papper boxes"
-                    width="370"
                   />
                   <p class="card-set__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -260,9 +313,18 @@
                 <div class="card-set__thumb">
                   <img
                     class="card-set__image"
-                    src="images/web-no-borders.jpg"
+                    srcset="
+                      ./images/desktop/web-no-borders-370.jpg   370w,
+                      ./images/desktop/web-no-borders-370@2.jpg 740w,
+                      ./images/tablet/web-no-borders-354.jpg    354w,
+                      ./images/tablet/web-no-borders-354@2.jpg  708w,
+                      ./images/phone/web-no-borders-450.jpg     450w,
+                      ./images/phone/web-no-borders-450@2.jpg   900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px,
+                  100vw"
+                    src="images/desktop/web-no-borders-370.jpg"
                     alt="web site promo"
-                    width="370"
                   />
                   <p class="card-set__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -282,9 +344,18 @@
                 <div class="card-set__thumb">
                   <img
                     class="card-set__image"
-                    src="images/limited-edition-book.jpg"
+                    srcset="
+                      ./images/desktop/limited-edition-book-370.jpg   370w,
+                      ./images/desktop/limited-edition-book-370@2.jpg 740w,
+                      ./images/tablet/limited-edition-book-354.jpg    354w,
+                      ./images/tablet/limited-edition-book-354@2.jpg  708w,
+                      ./images/phone/limited-edition-book-450.jpg     450w,
+                      ./images/phone/limited-edition-book-450@2.jpg   900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px,
+                  100vw"
+                    src="./images/desktop/limited-edition-book-370.jpg"
                     alt="book spread"
-                    width="370"
                   />
                   <p class="card-set__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -304,9 +375,19 @@
                 <div class="card-set__thumb">
                   <img
                     class="card-set__image"
-                    src="images/project-lab.jpg"
-                    alt="tag with lab logo"
-                    width="370"
+                    srcset="
+                      ./images/desktop/project-lab-370.jpg   370w,
+                      ./images/desktop/project-lab-370@2.jpg 740w,
+                      ./images/tablet/project-lab-354.jpg    354w,
+                      ./images/tablet/project-lab-354@2.jpg  708w,
+                      ./images/phone/project-lab-450.jpg     450w,
+                      ./images/phone/project-lab-450@2.jpg   900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                  (min-width:480px) 450px, 100vh"
+                    src="./images/desktop/project-lab-370.jpg"
+                    alt="tag with lab
+                  logo"
                   />
                   <p class="card-set__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -326,9 +407,18 @@
                 <div class="card-set__thumb">
                   <img
                     class="card-set__image"
-                    src="images/growing-busines-app.jpg"
+                    srcset="
+                      ./images/desktop/growing-busines-app-370.jpg   370w,
+                      ./images/desktop/growing-busines-app-370@2.jpg 740w,
+                      ./images/tablet/growing-busines-app-354.jpg    354w,
+                      ./images/tablet/growing-busines-app-354@2.jpg  708w,
+                      ./images/phone/growing-busines-app-450.jpg     450w,
+                      ./images/phone/growing-busines-app-450@2.jpg   900w
+                    "
+                    sizes="(min-width:1200px) 370px, (min-width:768px) 354px,
+                  (min-width:480px) 450px, 100vh"
+                    src="./images/desktop/growing-busines-app-370.jpg"
                     alt="working on laptop"
-                    width="370"
                   />
                   <p class="card-set__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -346,7 +436,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <footer class="footer">
       <div class="container footer__container">

@@ -9,6 +9,41 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  max-width: 480px;
+  background-image: linear-gradient(
+      var(--hero-overlay-color),
+      var(--hero-overlay-color)
+    ),
+    url(../images/phone/hero-background-image-480.jpeg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        var(--hero-overlay-color),
+        var(--hero-overlay-color)
+      ),
+      url(../images/phone/hero-background-image-480@2.jpeg);
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    background-image: linear-gradient(
+        var(--hero-overlay-color),
+        var(--hero-overlay-color)
+      ),
+      url(../images/tablet/hero-background-image-768.jpeg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          var(--hero-overlay-color),
+          var(--hero-overlay-color)
+        ),
+        url(../images/tablet/hero-background-image-768@2.jpeg);
+    }
+  }
 
   @media screen and (min-width: $desktop) {
     max-width: 1600px;
@@ -18,19 +53,18 @@
         var(--hero-overlay-color),
         var(--hero-overlay-color)
       ),
-      url(../images/desktop/hero-background-image-desktop.jpg);
-  }
+      url(../images/desktop/hero-background-image-1600.jpg);
 
-  // @media screen and (min-width: $desktop) {
-  //   max-width: 1600px;
-  //   padding-top: 200px;
-  //   padding-bottom: 200px;
-  //   background-image: linear-gradient(
-  //       var(--hero-background-color),
-  //       var(--hero-background-color)
-  //     )
-  //     url(../images/desktop/hero-background-image-desktop.jpg);
-  // }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          var(--hero-overlay-color),
+          var(--hero-overlay-color)
+        ),
+        url(../images/desktop/hero-background-image-1600@2.jpeg);
+    }
+  }
 }
 
 .hero__title {
