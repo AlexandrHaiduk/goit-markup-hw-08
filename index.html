@@ -16,6 +16,10 @@
     />
     <link rel="stylesheet" href="css/main.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <title>HW-08-index</title>
   </head>
@@ -259,7 +263,7 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team wow animate__animated animate__fadeInUpBig">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
 
@@ -785,5 +789,9 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
